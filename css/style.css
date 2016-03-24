@@ -3,9 +3,13 @@ body{
 	background-size: cover;
 }
 
+p{
+	/*padding: 5%;*/
+}
 
 .mdl-cell{
-	padding: 10% 5% 25% 5% ;
+	/*padding: 10% 10%;*/
 	margin: 0 auto;
+	margin-top: 15%;
 	background: #F3F3F3;
 }
