@@ -1,16 +1,57 @@
 body{
+	height: 100%;
 	background: url('../img/back.png') no-repeat center center fixed;
 	background-size: cover;
 }
 
-p{
-	/*padding: 5%;*/
+.content-grid{
+	height: 100%;
+	padding: 0;
 }
 
 .mdl-cell{
-	/*padding: 10% 10%;*/
-	margin: 0 auto;
+	background: #F8F8F8;
+}
+
+.mdl-cell--1-col{
+	height: 100%;
+	margin: 0;
+}
+
+.blank{
+	background: inherit;
+}
+
+.mdl-cell--7-col{
 	margin-top: 15%;
-	background: #F3F3F3;
-	max-height: 25px;
+	height: 70%;
+}
+
+h2{
+	margin: 0 0 1% 2%;
+}
+
+p{
+	margin: 2%;
+	margin-left: 2.5%;
+	text-align: justify;
+}
+
+div > img{
+	float: right;
+	opacity: 0.8;
+	margin: 2% 1% 2% 3%;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%; 
+}
+
+li{
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
