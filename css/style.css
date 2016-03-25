@@ -10,6 +10,19 @@ body{
 	color: white;
 }
 
-a{
-	/*color: white !important;*/
+.demo-card-wide.mdl-card {
+  width: 100%;
+  margin-top: 10%;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 400px;
+  background: url('../img/card1.jpg') center / cover;  
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+p{
+	margin-top: 10px;
 }
