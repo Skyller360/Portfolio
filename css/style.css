@@ -1,0 +1,79 @@
+body{
+	height: 100%;
+	background: url('../img/back.png') no-repeat center center fixed;
+	background-size: cover;
+}
+
+.content-grid{
+	height: 100%;
+	padding: 0;
+}
+
+.mdl-cell{
+	background: rgba(151, 209, 122, 0.8);
+}
+
+.mdl-cell--1-col{
+	height: 100%;
+	margin: 0;
+	width: 5%;
+}
+
+.mdl-cell--2-col{
+	background: white;
+}
+
+a{
+	color: rgb(115, 77, 158);
+	text-decoration: none;
+}
+
+ul{
+	list-style-type: none;
+	margin-top: 430%;
+	padding: 0;
+	width: 100%; 
+	text-align: center;
+}
+
+li{
+	width: 100%;
+	margin-bottom: 150%;
+}
+
+.fa{
+	font-size: 2em !important;
+}
+
+.blank{
+	background: inherit;
+}
+
+.mdl-cell--7-col{
+	margin-top: 18%;
+	height: 50%;
+	background-color: rgba(158, 101, 77, 0.9);
+}
+
+h2{
+	font-family: 'Work Sans', sans-serif;
+	margin: 1% 0 1% 2%;
+	color: #F1F1F1;
+}
+
+p{
+	font-family: 'Merriweather', serif;
+	font-size: 0.9em;
+	margin: 1% 1% 1% 2.5%;
+	color: #F1F1F1;
+}
+
+p a{
+	color: #7BAB64;
+}
+
+div > img{
+	float: right;
+	/*opacity: 0.8;*/
+	margin: 2% 1% 2% 3%;
+}
