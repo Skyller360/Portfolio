@@ -1,6 +1,14 @@
 body{
 	background: url('../img/back.jpg') center/cover;
-	/*background-size: cover;*/
+	overflow: hidden;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Oswald', sans-serif;
 }
 
 .demo-layout-transparent
@@ -15,7 +23,8 @@ body{
   margin-top: 130px;
   background: rgba(250, 250, 250, 0.95);
 }
-.demo-card-wide > .mdl-card__title {
+
+.home-card > .mdl-card__title {
   color: #fff;
   height: 400px;
   background: url('../img/card1.jpg') center / cover;  
@@ -23,10 +32,22 @@ body{
 
 p{
 	margin-top: 10px;
+	font-family: 'Merriweather', serif;
+}
+
+.mdl-card{
+	opacity: 0;
+	width: 100%;
+  	margin-top: 130px;
+	background: rgba(250, 250, 250, 0.95);
 }
 
 .mdl-card__actions{
 	text-align: right;
+}
+
+.mdl-layout-title{
+	font-family: 'Oswald', sans-serif;
 }
 
 span > img{
@@ -35,6 +56,22 @@ span > img{
 	height: 60px;
 }
 
-#kaki{
+.kaki{
 	color: #98AE3B;
+}
+
+.services-card{
+	/*margin-top: 500px;*/
+}
+
+.site-card > .mdl-card__title {
+  color: #fff;
+  height: 400px;
+  background: url('../img/card2.jpg') center / cover;  
+}
+
+.mobile-card > .mdl-card__title {
+  color: #fff;
+  height: 400px;
+  background: url('../img/card3.jpeg') center / cover;  
 }

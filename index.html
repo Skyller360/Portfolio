@@ -7,13 +7,15 @@
 	<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.light_green-red.min.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="demo-layout-transparent mdl-layout mdl-js-layout">
 	  	<header class="mdl-layout__header mdl-layout__header--transparent">
 	    <div class="mdl-layout__header-row">
 	      <!-- Title -->
-	      <span class="mdl-layout-title">Tomson <span id="kaki">Development</span></span>
+	      <span class="mdl-layout-title"><span class="kaki">Tomson</span> / Development</span>
 	      <!-- Add spacer, to align navigation to the right -->
 	      <div class="mdl-layout-spacer"></div>
 	      <!-- Navigation -->
@@ -34,8 +36,12 @@
 	  </div>
 	  <main class="mdl-layout__content">
 		  <div class="mdl-grid">
+		  	
+
+		  	<!-- FIRST CARD -->
+
 		  	<div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset">
-				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+				<div class="demo-card-wide mdl-card mdl-shadow--8dp home-card">
 				  <div class="mdl-card__title">
 				    <h2 class="mdl-card__title-text">Bienvenue</h2>
 				  </div>
@@ -45,15 +51,70 @@
 					</p>
 				  </div>
 				  <div class="mdl-card__actions mdl-card--border">
-				    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+				    <a class="mdl-button mdl-button--colored home-button mdl-js-button mdl-js-ripple-effect" href="#">
 				      Nos services
 				    </a>
 				  </div>
 				</div>
-		  	</div>
+			</div>	
+				<!-- END FIRST CARD -->
+
+				<!-- SECOND CARD -->
+			<div class="mdl-cell mdl-cell--4-col mdl-cell--2-offset">
+				<div class="demo-card-wide mdl-card mdl-shadow--8dp services-card site-card">
+				  <div class="mdl-card__title">
+				    <h2 class="mdl-card__title-text">Sites web</h2>
+				  </div>
+				  <div class="mdl-card__supporting-text">
+				    <p>	
+				    	Entreprise de développement web, spécialisée dans la création de 	site internet et d'applications mobiles pour tout secteur 			d'activité.	Nous vous proposons des solutions innovantes et efficaces pour la 	création ainsi que la refonte de votre site internet ou de votre 	application mobiles.
+					</p>
+				  </div>
+				</div>
+			</div>
+				<!-- END SECOND CARD -->
+
+				<!-- THIRD CARD -->
+			<div class="mdl-cell mdl-cell--4-col">
+				<div class="demo-card-wide mdl-card mdl-shadow--8dp services-card mobile-card">
+				  <div class="mdl-card__title">
+				    <h2 class="mdl-card__title-text">Applications mobiles</h2>
+				  </div>
+				  <div class="mdl-card__supporting-text">
+				    <p>	
+				    	Entreprise de développement web, spécialisée dans la création de 	site internet et d'applications mobiles pour tout secteur 			d'activité.	Nous vous proposons des solutions innovantes et efficaces pour la 	création ainsi que la refonte de votre site internet ou de votre 	application mobiles.
+					</p>
+				  </div>
+				</div>
+			</div>
+				<!-- END THIRD CARD -->
+
+		  	
 		  </div>
 	  </main>
 	</div>
 	<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.home-card').animate({
+			    opacity: 1
+			  }, 800, function() {
+			  });
+		});
+
+		$('.home-button').on('click', function() {
+			 $('.home-card').animate({
+			    opacity: 0,
+			    right: '+=50',
+			  }, 800, function() {
+			  	$(this).remove();
+			  	$('.services-card').animate({
+				 	opacity: 0.98
+			 	}, 800, function() {});
+			  });
+		})
+
+	</script>
 </body>
 </html>
