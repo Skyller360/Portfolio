@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Anthony Tomson - Web Dev</title>
 	<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.light_green-red.min.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -40,23 +41,24 @@
 		  	
 
 		  	<!-- FIRST CARD -->
-
 		  	<div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset">
-				<div class="demo-card-wide mdl-card mdl-shadow--8dp home-card">
-				  <div class="mdl-card__title">
-				    <h2 class="mdl-card__title-text">Bienvenue</h2>
-				  </div>
-				  <div class="mdl-card__supporting-text">
-				    <p>	
-				    	Entreprise de développement web, spécialisée dans la création de 	site internet et d'applications mobiles pour tout secteur 			d'activité.	Nous vous proposons des solutions innovantes et efficaces pour la 	création ainsi que la refonte de votre site internet ou de votre 	application mobiles.
-					</p>
-				  </div>
-				  <div class="mdl-card__actions mdl-card--border">
-				    <a class="mdl-button mdl-button--colored home-button mdl-js-button mdl-js-ripple-effect" href="#services">
-				      Nos services
-				    </a>
-				  </div>
-				</div>
+		  		<a href="#services">
+					<div class="demo-card-wide mdl-card mdl-shadow--8dp home-card">
+					  <div class="mdl-card__title">
+					    <h2 class="mdl-card__title-text">Bienvenue</h2>
+					  </div>
+					  <div class="mdl-card__supporting-text">
+					    <p>	
+					    	Entreprise de développement web, spécialisée dans la création de 	site internet et d'applications mobiles pour tout secteur 			d'activité.	Nous vous proposons des solutions innovantes et efficaces pour la 	création ainsi que la refonte de votre site internet ou de votre 	application mobiles.
+						</p>
+					  </div>
+					  <div class="mdl-card__actions mdl-card--border">
+					    <a class="mdl-button mdl-button--colored home-button mdl-js-button mdl-js-ripple-effect" href="#services">
+					      Nos services
+					    </a>
+					  </div>
+					</div>
+				</a>		
 			</div>	
 				<!-- END FIRST CARD -->
 
@@ -163,7 +165,7 @@
 			$(className).css('display', 'flex');
 			$(className).animate({
 			  opacity: 1,
-			}, 600, function() {});
+			}, 800, function() {});
 		};
 
 		function hide(className){

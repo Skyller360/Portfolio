@@ -1,3 +1,5 @@
+/* GLOBAL VARIABLES */
+
 body{
 	background: url('../img/back.jpg') center/cover;
 	overflow: hidden;
@@ -12,52 +14,8 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'Oswald', sans-serif;
 }
 
-.demo-layout-transparent
-.mdl-layout__header,
-.demo-layout-transparent
-.mdl-layout__drawer-button {
-	color: white;
-}
-
-
-.mdl-layout__drawer{
-	width: 8%;
-}
-
-.mdl-layout-title{
-	padding-left: 28px !important;
-}
-.demo-card-wide.mdl-card {
-  width: 100%;
-  margin-top: 130px;
-  background: rgba(250, 250, 250, 0.95);
-}
-
-.home-card > .mdl-card__title {
-  color: #fff;
-  height: 400px;
-  background: url('../img/card1.jpg') center / cover;  
-}
-
 p{
 	margin-top: 10px;
-	
-}
-
-.mdl-card{
-	opacity: 0;
-	display: none;
-	width: 100%;
-  	margin-top: 130px;
-	background: rgba(250, 250, 250, 0.95);
-}
-
-.mdl-card__actions{
-	text-align: right;
-}
-
-.mdl-layout-title{
-	font-family: 'Oswald', sans-serif;
 }
 
 span > img{
@@ -66,29 +24,9 @@ span > img{
 	height: 60px;
 }
 
-.kaki{
-	color: #98AE3B;
-}
-
 a{
 	text-decoration: none;
 	color: inherit;
-}
-
-.site-card > .mdl-card__title{
-  color: #fff;
-  height: 400px;
-  background: url('../img/card2.jpg') center / cover;  
-}
-
-.mobile-card > .mdl-card__title{
-  color: #fff;
-  height: 400px;
-  background: url('../img/mobile.jpg') center / cover;  
-}
-
-.contact-card > .mdl-card__title{
-	margin: 0 auto;
 }
 
 ul{
@@ -106,6 +44,80 @@ li{
 .fa{
 	font-size: 2em;
 }
+
+.kaki{
+	color: #98AE3B;
+}
+
+/* TRANSPARENT LAYOUT */
+
+.mdl-layout-title{
+	font-family: 'Oswald', sans-serif;
+}
+
+/* LEFT LAYOUT */
+
+.demo-layout-transparent
+.mdl-layout__header,
+.demo-layout-transparent
+.mdl-layout__drawer-button {
+	color: white;
+}
+
+.mdl-layout__content{
+	height: 100%;
+}
+
+
+.mdl-layout__drawer{
+	width: 8%;
+}
+
+.mdl-layout-title{
+	padding-left: 28px !important;
+}
+
+/* GENERALS CARDS */
+
+.mdl-card{
+	opacity: 0;
+	display: none;
+	width: 100%;
+  	margin-top: 130px;
+	background: rgba(250, 250, 250, 0.93);
+}
+
+/* CARDS TITLE */
+
+.mdl-card__title{
+	color: #fff;
+	height: 400px;
+	background: url('../img/card1.jpg') center / cover;  
+}
+
+.site-card > .mdl-card__title{
+  background: url('../img/card2.jpg') center / cover;  
+}
+
+.mobile-card > .mdl-card__title{
+  background: url('../img/mobile.jpg') center / cover;  
+}
+
+.contact-card > .mdl-card__title{
+	color: inherit;
+	height: inherit;
+	background: inherit;
+	margin: 0 auto;
+}
+
+
+/* CARDS ACTION */
+
+.mdl-card__actions{
+	text-align: right;
+}
+
+/* CONTACT CARDS LI */
 
 .list-text li:first-child{
 	margin-left: 210px;
