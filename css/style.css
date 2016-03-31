@@ -14,8 +14,13 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'Oswald', sans-serif;
 }
 
+h4{
+	margin-top: 1%;
+	text-align: center;
+}
+
 p{
-	margin-top: 10px;
+	margin-top: 2%;
 }
 
 span > img{
@@ -36,9 +41,8 @@ ul{
 li{
 	list-style: none;
 	display: inline;
-	margin-left: 230px;
+	margin: 0 15%;
 	margin-top: inherit;
-
 }
 
 .fa{
@@ -73,8 +77,8 @@ li{
 	height: 100%;
 }
 
-.mdl-layout-title{
-	padding-left: 28px !important;
+.mdl-layout-title > img{
+	padding-left: 10% !important;
 }
 
 /* GENERALS CARDS */
@@ -82,7 +86,7 @@ li{
 .mdl-card{ 
 	opacity: 0;
 	width: 100%;
-  	margin-top: 10%;
+  	margin-top: 13%;
 	background: rgba(250, 250, 250, 0.93);
 }
 
@@ -90,15 +94,16 @@ li{
 
 .mdl-card__title{
 	color: #fff;
-	height: 400px;
+	height: 100%;
+	padding-top: 35%;
 	background: url('../img/card1.jpg') center / cover;  
 }
 
-.site-card > .mdl-card__title{
+#site{
   background: url('../img/card2.jpg') center / cover;  
 }
 
-.mobile-card > .mdl-card__title{
+#mobile{
   background: url('../img/mobile.jpg') center / cover;  
 }
 
@@ -106,9 +111,9 @@ li{
 	color: inherit;
 	height: inherit;
 	background: inherit;
+	padding: 0;
 	margin: 0 auto;
 }
-
 
 /* CARDS ACTION */
 
@@ -116,17 +121,38 @@ li{
 	text-align: right;
 }
 
-/* CONTACT CARDS LI */
+/* SERVICES CARD */
+
+.services-card{
+	margin-top: 10%;
+	margin-left: 5%;
+}
+
+/* CONTACT CARD */
+
+.contact-card{
+	margin-top: 10%;
+	text-align: center;
+}
+
+.contact-card > .mdl-card__supporting-text{
+	width: 100%;
+}
 
 .list-text li:first-child{
-	margin-left: 210px;
+	margin-left: 11%;
+	margin-right: 0;
 }
 
 .list-text li{
-	margin-left: 185px;
+	margin-left: 22%;
+	margin-right: 0;
+}
 
+li > img{
+	width: 30%;
 }
 
 .list-text li:last-child{
-	margin-left: 115px;
+	margin-left: 11.5%;
 }
