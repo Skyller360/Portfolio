@@ -15,8 +15,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h4{
-	margin-top: 1%;
-	text-align: center;
+	margin: 0 auto;
+	margin-top: 1.3%;
+	color: rgba(0,0,0,0.54);
 }
 
 p{
@@ -41,7 +42,7 @@ ul{
 li{
 	list-style: none;
 	display: inline;
-	margin: 0 15%;
+	margin: 0 13%;
 	margin-top: inherit;
 }
 
@@ -112,7 +113,8 @@ li{
 	height: inherit;
 	background: inherit;
 	padding: 0;
-	margin: 0 auto;
+	margin: 0 44%;
+	width: 100%
 }
 
 /* CARDS ACTION */
@@ -132,7 +134,16 @@ li{
 
 .contact-card{
 	margin-top: 10%;
+	margin-left: 14%;
+}
+
+.contact-card p{
 	text-align: center;
+	margin-right: 5%;
+}
+
+.contact-card p:nth-child(2){
+	margin-bottom: 5%;
 }
 
 .contact-card > .mdl-card__supporting-text{
@@ -140,12 +151,12 @@ li{
 }
 
 .list-text li:first-child{
-	margin-left: 11%;
+	margin-left: 9%;
 	margin-right: 0;
 }
 
 .list-text li{
-	margin-left: 22%;
+	margin-left: 17%;
 	margin-right: 0;
 }
 
@@ -154,5 +165,31 @@ li > img{
 }
 
 .list-text li:last-child{
-	margin-left: 11.5%;
+	margin-left: 10%;
+}
+
+@media screen and (min-width: 1024px) {
+	h4{
+		display: none;
+	}
+
+	.list-text li:first-child{
+		margin-left: 11%;
+	}
+
+	.list-text li{
+		margin-left: 22%;
+	}
+
+	.list-text li:last-child{
+		margin-left: 13%;
+	}
+
+	li > img{
+		width: 25%;
+	}
+
+	li{
+		margin: 0 13.5%;
+	}
 }
