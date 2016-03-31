@@ -168,6 +168,8 @@ li > img{
 	margin-left: 10%;
 }
 
+/* SMALL SMARTPHONE */
+
 @media screen and (min-width: 1024px) {
 	h4{
 		display: none;
@@ -192,4 +194,59 @@ li > img{
 	li{
 		margin: 0 13.5%;
 	}
+}
+
+/* S3 -> iPhone 6 */
+
+@media screen 
+  and (min-width: 320px) and (max-width: 420px)
+  {
+		
+		h4{
+			margin-top: 2.7%;
+			font-size: 1.3em;
+		}
+
+  		.services-card{
+			margin-top: 8%;
+			margin-left: 2%;
+		}
+
+		.contact-card{
+			margin-top: 20%;
+			margin-left: 2%;
+		}
+
+		.contact-card > .mdl-card__title{
+			margin-left: 35%;
+			margin-top: 2%;
+		}
+
+		.contact-card p{
+			text-align: left;
+		}
+
+		.contact-card p:nth-child(2){
+			margin-bottom: 10%;
+		}
+
+		.contact-card li:first-child{
+			margin-left: 6%;
+		}
+
+		.contact-card li{
+			margin-left: 16%;
+		}
+
+		.contact-card li:last-child{
+			margin-left: 14%;
+		}
+
+		.contact-card  ul{
+			padding: 0;
+		}
+
+		.fa{
+			font-size: 1.5em;
+		}		
 }
