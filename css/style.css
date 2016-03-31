@@ -1,5 +1,9 @@
 /* GLOBAL VARIABLES */
 
+.clearfix {
+  overflow: auto;
+}
+
 body{
 	background: url('../img/back.jpg') center/cover;
 	overflow: hidden;
