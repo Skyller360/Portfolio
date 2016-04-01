@@ -8,6 +8,7 @@
     <meta name="author" content="Tomson Development">
     <meta name="keywords" content="TomsonDevelopment, Tomson, Development, tomsondevelopment, tomson, development,création de site,création de site web,web,développement,site,internet,application,mobile,application mobile,tomson">
     <meta name="copyright" content="Tomson Development">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
 	<meta property="og:url" content="http://www.tomsondevelopment.com">
     <meta property="og:title" content="Tomson Development" />
     <meta property="og:type" content="website" />
@@ -57,7 +58,7 @@
 					  </div>
 					  <div class="mdl-card__supporting-text">
 					    <p>	
-					    	Entreprise de <span class="kaki">développement web</span>, spécialisée dans la création de 	site internet et d'applications mobiles pour tout secteur d'activité.	Nous vous proposons des <span class="kaki">solutions</span> innovantes et <span class="kaki">efficaces</span> pour la 	création ainsi que la refonte de votre site internet ou de votre 	application mobiles.
+					    	Entreprise de <span class="kaki">développement web</span>, spécialisée dans la création de 	sites internet et d'applications mobiles pour tout secteur d'activité.	Nous vous proposons des <span class="kaki">solutions</span> innovantes et <span class="kaki">efficaces</span> pour la 	création ainsi que la refonte de votre site internet ou de votre 	application mobiles.
 						</p>
 					  </div>
 					  <div class="mdl-card__actions mdl-card--border">
@@ -153,19 +154,27 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script>
 		$(document).ready(function() {
-			show('.home-card');
+			show('.home-card');	
+			scrollDown();
 		});
+
+		$(document).on('click', function(){
+			scrollDown();
+		})
 
 		$('a[href="#"]').on('click', function() {
 			hide('.services-card');
 			hide('.contact-card');
+			scrollDown();
 			show('.home-card');
+			
 		});
 
 		$('a[href="#services"]').on('click', function() {
 			hide('.contact-card');
 			hide('.home-card');
 			show('.services-card');
+			
 		});
 
 		$('a[href="#contact"]').on('click', function() {
@@ -187,6 +196,13 @@
 			}, 800, function() {});
 			$(className).css('display', 'none');
 		};
+
+		// $('.mdl-card').scrollTop;
+
+		function scrollDown() {
+			var n = $('.clearfix').height();
+			$('.clearfix').animate({ scrollTop: n }, 1);
+		}
 
 	</script>
 </body>
